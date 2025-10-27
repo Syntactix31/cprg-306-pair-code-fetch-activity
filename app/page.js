@@ -24,15 +24,19 @@ export default function Home() {
         <header>
           <h2>List of Ingredients</h2>
         </header>
-        <IngredientSelect
-          selectedIngredient={selectedIngredient}
-          onSelectIngredient={handleSelectIngredient}
-        />
+        <div className="ingredient-buttons">
+          <IngredientSelect
+            selectedIngredient={selectedIngredient}
+            onSelectIngredient={handleSelectIngredient}
+          />
+        </div>
       </section>
       <section>
         <header>
           <h2>Display Potential recipes</h2>
-          <MealList ingredient={selectedIngredient}/>
+          <div className="meal-list-container">
+            <MealList ingredient={selectedIngredient}/>
+          </div>
         </header>
       </section>
       <footer>
