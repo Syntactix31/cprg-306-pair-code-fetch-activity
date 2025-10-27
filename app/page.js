@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react'
-import './globals.css'
+import { useState } from 'react';
+import './globals.css';
 import IngredientSelect from './Navigator/IngredientSelector';
 import MealList from './Navigator/MealList';
 //import MealCard from './Navigator/MealCard';
@@ -11,7 +11,7 @@ export default function Home() {
 
   const handleSelectIngredient = (ingredientName) => {
     setSelectedIngredient(ingredientName);
-  }
+  };
 
   return (
     <div>
@@ -35,7 +35,7 @@ export default function Home() {
         <header>
           <h2>Display Potential recipes</h2>
           <div className="meal-list-container">
-            <MealList ingredient={selectedIngredient}/>
+            <MealList ingredient={selectedIngredient} />
           </div>
         </header>
       </section>
