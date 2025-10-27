@@ -1,3 +1,8 @@
+import Link from 'next/link';
+// import MealCard from '../Navigator/MealCard.jsx';
+import MealList from './Navigator/MealList.jsx';
+import IngredientSelect from './Navigator/IngredientSelector.jsx';
+
 export default function Home() {
   return (
     <div>

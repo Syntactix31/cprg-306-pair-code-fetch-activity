@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 
-export default function IngredientSelect ({ ingredients, onSelectIngredient, selectedIngredient }) {
+export default function IngredientSelect({ ingredients, onSelectIngredient, selectedIngredient }) {
   
   return (
     <div>
