@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals.css';
 import IngredientSelect from './Navigator/IngredientSelector';
 import MealList from './Navigator/MealList';
 
