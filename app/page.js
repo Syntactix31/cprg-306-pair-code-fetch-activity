@@ -1,9 +1,18 @@
+"use client"
+
+import { useState } from 'react'
 import './globals.css'
 import IngredientSelect from './Navigator/IngredientSelector';
 import MealList from './Navigator/MealList';
-import MealCard from './Navigator/MealCard';
+//import MealCard from './Navigator/MealCard';
 
 export default function Home() {
+  const [selectedIngredient, setSelectedIngredient] = useState(null);
+
+  const handleSelectIngredient = (ingredientName) => {
+    setSelectedIngredient(ingredientName);
+  }
+
   return (
     <div>
       <main>
@@ -15,12 +24,15 @@ export default function Home() {
         <header>
           <h2>List of Ingredients</h2>
         </header>
-        <IngredientSelect />
+        <IngredientSelect
+          selectedIngredient={selectedIngredient}
+          onSelectIngredient={handleSelectIngredient}
+        />
       </section>
       <section>
         <header>
           <h2>Display Potential recipes</h2>
-          <MealList />
+          <MealList ingredient={selectedIngredient}/>
         </header>
       </section>
       <footer>
