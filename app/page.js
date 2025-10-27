@@ -1,3 +1,7 @@
+import './globals.css'
+import IngredientSelect from './Navigator/IngredientSelector';
+import MealList from './Navigator/MealList';
+
 export default function Home() {
   return (
     <div>
@@ -10,14 +14,16 @@ export default function Home() {
         <header>
           <h2>List of Ingredients</h2>
         </header>
+        <IngredientSelect />
       </section>
       <section>
         <header>
           <h2>Display Potential recipes</h2>
+          <MealList />
         </header>
       </section>
       <footer>
-        <p>&copy; 2025 GROUP NAME</p>
+        <p>&copy; 2025 Levi & Mat</p>
       </footer>
     </div>
   );
