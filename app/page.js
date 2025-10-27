@@ -1,6 +1,7 @@
 import './globals.css'
 import IngredientSelect from './Navigator/IngredientSelector';
 import MealList from './Navigator/MealList';
+import MealCard from './Navigator/MealCard';
 
 export default function Home() {
   return (
